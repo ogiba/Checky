@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */; };
+		7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1920F6B94F002A4FD5 /* ViewController.swift */; };
+		7A45CF1D20F6B94F002A4FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF1B20F6B94F002A4FD5 /* Main.storyboard */; };
+		7A45CF2020F6B94F002A4FD5 /* Checky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1E20F6B94F002A4FD5 /* Checky.xcdatamodeld */; };
+		7A45CF2220F6B952002A4FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF2120F6B952002A4FD5 /* Assets.xcassets */; };
+		7A45CF2520F6B952002A4FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF2320F6B952002A4FD5 /* LaunchScreen.storyboard */; };
+		7A45CF3020F6B953002A4FD5 /* CheckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF2F20F6B953002A4FD5 /* CheckyTests.swift */; };
+		7A45CF3B20F6B953002A4FD5 /* CheckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A45CF2C20F6B953002A4FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A45CF0C20F6B94F002A4FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A45CF1320F6B94F002A4FD5;
+			remoteInfo = Checky;
+		};
+		7A45CF3720F6B953002A4FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A45CF0C20F6B94F002A4FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A45CF1320F6B94F002A4FD5;
+			remoteInfo = Checky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A45CF1420F6B94F002A4FD5 /* Checky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A45CF1920F6B94F002A4FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A45CF1C20F6B94F002A4FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A45CF1F20F6B94F002A4FD5 /* Checky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Checky.xcdatamodel; sourceTree = "<group>"; };
+		7A45CF2120F6B952002A4FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A45CF2420F6B952002A4FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A45CF2620F6B952002A4FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A45CF2B20F6B953002A4FD5 /* CheckyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A45CF2F20F6B953002A4FD5 /* CheckyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckyTests.swift; sourceTree = "<group>"; };
+		7A45CF3120F6B953002A4FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A45CF3620F6B953002A4FD5 /* CheckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckyUITests.swift; sourceTree = "<group>"; };
+		7A45CF3C20F6B953002A4FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A45CF1120F6B94F002A4FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A45CF2820F6B953002A4FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A45CF3320F6B953002A4FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A45CF0B20F6B94F002A4FD5 = {
+			isa = PBXGroup;
+			children = (
+				7A45CF1620F6B94F002A4FD5 /* Checky */,
+				7A45CF2E20F6B953002A4FD5 /* CheckyTests */,
+				7A45CF3920F6B953002A4FD5 /* CheckyUITests */,
+				7A45CF1520F6B94F002A4FD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A45CF1520F6B94F002A4FD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A45CF1420F6B94F002A4FD5 /* Checky.app */,
+				7A45CF2B20F6B953002A4FD5 /* CheckyTests.xctest */,
+				7A45CF3620F6B953002A4FD5 /* CheckyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A45CF1620F6B94F002A4FD5 /* Checky */ = {
+			isa = PBXGroup;
+			children = (
+				7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */,
+				7A45CF1920F6B94F002A4FD5 /* ViewController.swift */,
+				7A45CF1B20F6B94F002A4FD5 /* Main.storyboard */,
+				7A45CF2120F6B952002A4FD5 /* Assets.xcassets */,
+				7A45CF2320F6B952002A4FD5 /* LaunchScreen.storyboard */,
+				7A45CF2620F6B952002A4FD5 /* Info.plist */,
+				7A45CF1E20F6B94F002A4FD5 /* Checky.xcdatamodeld */,
+			);
+			path = Checky;
+			sourceTree = "<group>";
+		};
+		7A45CF2E20F6B953002A4FD5 /* CheckyTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A45CF2F20F6B953002A4FD5 /* CheckyTests.swift */,
+				7A45CF3120F6B953002A4FD5 /* Info.plist */,
+			);
+			path = CheckyTests;
+			sourceTree = "<group>";
+		};
+		7A45CF3920F6B953002A4FD5 /* CheckyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */,
+				7A45CF3C20F6B953002A4FD5 /* Info.plist */,
+			);
+			path = CheckyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A45CF1320F6B94F002A4FD5 /* Checky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A45CF3F20F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "Checky" */;
+			buildPhases = (
+				7A45CF1020F6B94F002A4FD5 /* Sources */,
+				7A45CF1120F6B94F002A4FD5 /* Frameworks */,
+				7A45CF1220F6B94F002A4FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Checky;
+			productName = Checky;
+			productReference = 7A45CF1420F6B94F002A4FD5 /* Checky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A45CF2A20F6B953002A4FD5 /* CheckyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A45CF4220F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "CheckyTests" */;
+			buildPhases = (
+				7A45CF2720F6B953002A4FD5 /* Sources */,
+				7A45CF2820F6B953002A4FD5 /* Frameworks */,
+				7A45CF2920F6B953002A4FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A45CF2D20F6B953002A4FD5 /* PBXTargetDependency */,
+			);
+			name = CheckyTests;
+			productName = CheckyTests;
+			productReference = 7A45CF2B20F6B953002A4FD5 /* CheckyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A45CF3520F6B953002A4FD5 /* CheckyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A45CF4520F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "CheckyUITests" */;
+			buildPhases = (
+				7A45CF3220F6B953002A4FD5 /* Sources */,
+				7A45CF3320F6B953002A4FD5 /* Frameworks */,
+				7A45CF3420F6B953002A4FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A45CF3820F6B953002A4FD5 /* PBXTargetDependency */,
+			);
+			name = CheckyUITests;
+			productName = CheckyUITests;
+			productReference = 7A45CF3620F6B953002A4FD5 /* CheckyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A45CF0C20F6B94F002A4FD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Robert Ogiba";
+				TargetAttributes = {
+					7A45CF1320F6B94F002A4FD5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7A45CF2A20F6B953002A4FD5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7A45CF1320F6B94F002A4FD5;
+					};
+					7A45CF3520F6B953002A4FD5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7A45CF1320F6B94F002A4FD5;
+					};
+				};
+			};
+			buildConfigurationList = 7A45CF0F20F6B94F002A4FD5 /* Build configuration list for PBXProject "Checky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A45CF0B20F6B94F002A4FD5;
+			productRefGroup = 7A45CF1520F6B94F002A4FD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A45CF1320F6B94F002A4FD5 /* Checky */,
+				7A45CF2A20F6B953002A4FD5 /* CheckyTests */,
+				7A45CF3520F6B953002A4FD5 /* CheckyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A45CF1220F6B94F002A4FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45CF2520F6B952002A4FD5 /* LaunchScreen.storyboard in Resources */,
+				7A45CF2220F6B952002A4FD5 /* Assets.xcassets in Resources */,
+				7A45CF1D20F6B94F002A4FD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A45CF2920F6B953002A4FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A45CF3420F6B953002A4FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A45CF1020F6B94F002A4FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */,
+				7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */,
+				7A45CF2020F6B94F002A4FD5 /* Checky.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A45CF2720F6B953002A4FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45CF3020F6B953002A4FD5 /* CheckyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A45CF3220F6B953002A4FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45CF3B20F6B953002A4FD5 /* CheckyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A45CF2D20F6B953002A4FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A45CF1320F6B94F002A4FD5 /* Checky */;
+			targetProxy = 7A45CF2C20F6B953002A4FD5 /* PBXContainerItemProxy */;
+		};
+		7A45CF3820F6B953002A4FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A45CF1320F6B94F002A4FD5 /* Checky */;
+			targetProxy = 7A45CF3720F6B953002A4FD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A45CF1B20F6B94F002A4FD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A45CF1C20F6B94F002A4FD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A45CF2320F6B952002A4FD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A45CF2420F6B952002A4FD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A45CF3D20F6B953002A4FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A45CF3E20F6B953002A4FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A45CF4020F6B953002A4FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNX64N5M6;
+				INFOPLIST_FILE = Checky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.ogiba.Checky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A45CF4120F6B953002A4FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNX64N5M6;
+				INFOPLIST_FILE = Checky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.ogiba.Checky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A45CF4320F6B953002A4FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNX64N5M6;
+				INFOPLIST_FILE = CheckyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.ogiba.CheckyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checky.app/Checky";
+			};
+			name = Debug;
+		};
+		7A45CF4420F6B953002A4FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNX64N5M6;
+				INFOPLIST_FILE = CheckyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.ogiba.CheckyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checky.app/Checky";
+			};
+			name = Release;
+		};
+		7A45CF4620F6B953002A4FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNX64N5M6;
+				INFOPLIST_FILE = CheckyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.ogiba.CheckyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Checky;
+			};
+			name = Debug;
+		};
+		7A45CF4720F6B953002A4FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQNX64N5M6;
+				INFOPLIST_FILE = CheckyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.ogiba.CheckyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Checky;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A45CF0F20F6B94F002A4FD5 /* Build configuration list for PBXProject "Checky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A45CF3D20F6B953002A4FD5 /* Debug */,
+				7A45CF3E20F6B953002A4FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A45CF3F20F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "Checky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A45CF4020F6B953002A4FD5 /* Debug */,
+				7A45CF4120F6B953002A4FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A45CF4220F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "CheckyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A45CF4320F6B953002A4FD5 /* Debug */,
+				7A45CF4420F6B953002A4FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A45CF4520F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "CheckyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A45CF4620F6B953002A4FD5 /* Debug */,
+				7A45CF4720F6B953002A4FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A45CF1E20F6B94F002A4FD5 /* Checky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A45CF1F20F6B94F002A4FD5 /* Checky.xcdatamodel */,
+			);
+			currentVersion = 7A45CF1F20F6B94F002A4FD5 /* Checky.xcdatamodel */;
+			path = Checky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A45CF0C20F6B94F002A4FD5 /* Project object */;
+}
