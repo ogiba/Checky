@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0879C72F59FD3FE22C85C2C4 /* libPods-CheckyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D07FD1828ED87013949D58 /* libPods-CheckyTests.a */; };
 		7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */; };
 		7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1920F6B94F002A4FD5 /* ViewController.swift */; };
 		7A45CF1D20F6B94F002A4FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF1B20F6B94F002A4FD5 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		7A45CF2520F6B952002A4FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF2320F6B952002A4FD5 /* LaunchScreen.storyboard */; };
 		7A45CF3020F6B953002A4FD5 /* CheckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF2F20F6B953002A4FD5 /* CheckyTests.swift */; };
 		7A45CF3B20F6B953002A4FD5 /* CheckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */; };
+		E66B450DD245B25D1AF588FF /* libPods-CheckyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C6717808E29BEE09167E46 /* libPods-CheckyUITests.a */; };
+		F6D7BA27FD173BE49840A7D1 /* libPods-Checky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 475B4094D7F545C45F0C4BEF /* libPods-Checky.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03D07FD1828ED87013949D58 /* libPods-CheckyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBB98750B89AF017E07D5CB /* Pods-CheckyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyUITests/Pods-CheckyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B279CE541563943E520B5B3 /* Pods-Checky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checky.release.xcconfig"; path = "Pods/Target Support Files/Pods-Checky/Pods-Checky.release.xcconfig"; sourceTree = "<group>"; };
+		42C6717808E29BEE09167E46 /* libPods-CheckyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheckyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		475B4094D7F545C45F0C4BEF /* libPods-Checky.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Checky.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A45CF1420F6B94F002A4FD5 /* Checky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A45CF1920F6B94F002A4FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		7A45CF3620F6B953002A4FD5 /* CheckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckyUITests.swift; sourceTree = "<group>"; };
 		7A45CF3C20F6B953002A4FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7168FF35F170237F1D0D1BB /* Pods-CheckyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyTests/Pods-CheckyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE66B95D4DF74DD3B8257627 /* Pods-Checky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checky/Pods-Checky.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F69A7F966131FB60BB37E5 /* Pods-CheckyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyUITests/Pods-CheckyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA7754C6365C90055F258857 /* Pods-CheckyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyTests/Pods-CheckyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D7BA27FD173BE49840A7D1 /* libPods-Checky.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0879C72F59FD3FE22C85C2C4 /* libPods-CheckyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66B450DD245B25D1AF588FF /* libPods-CheckyUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				7A45CF2E20F6B953002A4FD5 /* CheckyTests */,
 				7A45CF3920F6B953002A4FD5 /* CheckyUITests */,
 				7A45CF1520F6B94F002A4FD5 /* Products */,
+				CB5082D8C0535B7A8E32E59E /* Pods */,
+				A2CFC11A643F9B5440E58761 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = CheckyUITests;
 			sourceTree = "<group>";
 		};
+		A2CFC11A643F9B5440E58761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				475B4094D7F545C45F0C4BEF /* libPods-Checky.a */,
+				03D07FD1828ED87013949D58 /* libPods-CheckyTests.a */,
+				42C6717808E29BEE09167E46 /* libPods-CheckyUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB5082D8C0535B7A8E32E59E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE66B95D4DF74DD3B8257627 /* Pods-Checky.debug.xcconfig */,
+				2B279CE541563943E520B5B3 /* Pods-Checky.release.xcconfig */,
+				A7168FF35F170237F1D0D1BB /* Pods-CheckyTests.debug.xcconfig */,
+				FA7754C6365C90055F258857 /* Pods-CheckyTests.release.xcconfig */,
+				0FBB98750B89AF017E07D5CB /* Pods-CheckyUITests.debug.xcconfig */,
+				F5F69A7F966131FB60BB37E5 /* Pods-CheckyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A45CF3F20F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "Checky" */;
 			buildPhases = (
+				58FB2FA86A27E7B8073B5C4F /* [CP] Check Pods Manifest.lock */,
 				7A45CF1020F6B94F002A4FD5 /* Sources */,
 				7A45CF1120F6B94F002A4FD5 /* Frameworks */,
 				7A45CF1220F6B94F002A4FD5 /* Resources */,
@@ -152,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A45CF4220F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "CheckyTests" */;
 			buildPhases = (
+				121B950430169A7163488901 /* [CP] Check Pods Manifest.lock */,
 				7A45CF2720F6B953002A4FD5 /* Sources */,
 				7A45CF2820F6B953002A4FD5 /* Frameworks */,
 				7A45CF2920F6B953002A4FD5 /* Resources */,
@@ -170,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A45CF4520F6B953002A4FD5 /* Build configuration list for PBXNativeTarget "CheckyUITests" */;
 			buildPhases = (
+				ECAC667630A007A356326BA2 /* [CP] Check Pods Manifest.lock */,
 				7A45CF3220F6B953002A4FD5 /* Sources */,
 				7A45CF3320F6B953002A4FD5 /* Frameworks */,
 				7A45CF3420F6B953002A4FD5 /* Resources */,
@@ -253,6 +296,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		121B950430169A7163488901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58FB2FA86A27E7B8073B5C4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Checky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAC667630A007A356326BA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A45CF1020F6B94F002A4FD5 /* Sources */ = {
@@ -432,6 +532,7 @@
 		};
 		7A45CF4020F6B953002A4FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE66B95D4DF74DD3B8257627 /* Pods-Checky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -453,6 +554,7 @@
 		};
 		7A45CF4120F6B953002A4FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B279CE541563943E520B5B3 /* Pods-Checky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -474,6 +576,7 @@
 		};
 		7A45CF4320F6B953002A4FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7168FF35F170237F1D0D1BB /* Pods-CheckyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +598,7 @@
 		};
 		7A45CF4420F6B953002A4FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7754C6365C90055F258857 /* Pods-CheckyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +620,7 @@
 		};
 		7A45CF4620F6B953002A4FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBB98750B89AF017E07D5CB /* Pods-CheckyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +641,7 @@
 		};
 		7A45CF4720F6B953002A4FD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F69A7F966131FB60BB37E5 /* Pods-CheckyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
