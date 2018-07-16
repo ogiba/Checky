@@ -31,6 +31,6 @@ class Currencies: Mappable {
         
         return _ratesDict.map { (key, value) -> Currency in
             return Currency(label: key, value: value)
-        }
+        }.sorted(by: {$0.label < $1.label})
     }
 }

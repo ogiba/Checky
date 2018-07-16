@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         currencyTableView.register(UINib.init(nibName: "CurrencyTableViewCell", bundle: nil), forCellReuseIdentifier: "test")
         // Do any additional setup after loading the view, typically from a nib.
         
+        currencyTableView.rowHeight = UITableViewAutomaticDimension
+        currencyTableView.estimatedRowHeight = UITableViewAutomaticDimension
+        
         CurrencyApi.getLatest(completion: { currencies in
             guard let _currencies = currencies else{
                 return
@@ -63,6 +66,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             let currency = currencies[indexPath.section].rates[indexPath.row]
             
             _currencyCell.labelView.text = currency.label
+            _currencyCell.valueView.text = "\(currency.value)"
         }
     }
     

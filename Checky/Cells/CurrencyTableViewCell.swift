@@ -11,6 +11,7 @@ import UIKit
 class CurrencyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelView: UILabel!
+    @IBOutlet weak var valueView: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,4 +24,10 @@ class CurrencyTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        labelView.text = nil
+        valueView.text = nil
+    }
 }

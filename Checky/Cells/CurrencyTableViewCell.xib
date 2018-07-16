@@ -21,7 +21,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGH-QD-i9l">
-                        <rect key="frame" x="16" y="14.5" width="288" height="20.5"/>
+                        <rect key="frame" x="16" y="14.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIb-u9-R32" userLabel="Value">
+                        <rect key="frame" x="68" y="14" width="236" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -29,13 +35,16 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="EGH-QD-i9l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3Lg-or-uOB"/>
-                    <constraint firstItem="EGH-QD-i9l" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Y1y-1Q-LaC"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="EGH-QD-i9l" secondAttribute="trailing" id="keR-NH-AZy"/>
+                    <constraint firstItem="EGH-QD-i9l" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F0j-7B-mgg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PIb-u9-R32" secondAttribute="trailing" id="Rgg-kc-eFN"/>
+                    <constraint firstItem="PIb-u9-R32" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f5N-HA-xnc"/>
+                    <constraint firstItem="PIb-u9-R32" firstAttribute="leading" secondItem="EGH-QD-i9l" secondAttribute="trailing" constant="10" id="rgO-JU-cWI"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="labelView" destination="EGH-QD-i9l" id="Od6-4n-xBy"/>
+                <outlet property="valueView" destination="PIb-u9-R32" id="GSc-pJ-9k9"/>
             </connections>
         </tableViewCell>
     </objects>
