@@ -11,6 +11,8 @@ import ObjectMapper
 
 class Currencies: Mappable {
     var date: String?
+    var ratesDict: Dictionary<String, Double>?
+    var rates: [Currency] = []
     
     required init?(map: Map) {
         
@@ -18,5 +20,17 @@ class Currencies: Mappable {
     
     func mapping(map: Map) {
         date <- map["date"]
+        ratesDict <- map["rates"]
+        rates = convert(ratesDict: ratesDict)
+    }
+
+    func convert(ratesDict: Dictionary<String, Double>?) -> [Currency] {
+        guard let _ratesDict = ratesDict else {
+            return []
+        }
+        
+        return _ratesDict.map { (key, value) -> Currency in
+            return Currency(label: key, value: value)
+        }
     }
 }

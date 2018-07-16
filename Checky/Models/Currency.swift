@@ -8,6 +8,12 @@
 
 import Foundation
 
-class Currency: NSDictionary {
+class Currency {
+    let label: String
+    let value: Double
     
+    init(label: String, value: Double) {
+        self.label = label
+        self.value = value
+    }
 }

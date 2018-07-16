@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currencyTableView: UITableView!
     
     var sectionTitles: [String] = []
+    var currencies: [Currencies] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
                 return
             }
             
-            self.sectionTitles.append(_currencies.date!)
+            self.currencies.append(_currencies)
             self.currencyTableView.reloadData()
         })
     }
@@ -39,15 +40,15 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionTitles.count
+        return currencies.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2;
+        return currencies[section].rates.count;
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionTitles[section]
+        return currencies[section].date
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,8 +58,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
         if let _currencyCell = cell as? CurrencyTableViewCell {
-            _currencyCell.labelView.text = "Test \(indexPath.row)"
+            let currency = currencies[indexPath.section].rates[indexPath.row]
+            
+            _currencyCell.labelView.text = currency.label
         }
     }
     
