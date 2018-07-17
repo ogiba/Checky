@@ -13,7 +13,7 @@ class ApiHelper {
     
     static var exchangeRateEnpoint = "\(baseUrl)/exchangerates"
     
-    static func latestEndpoint(for table:Table) -> String {
+    static func latestEndpoint(for table:TableType) -> String {
         return exchangeRateEnpoint + "/tables/\(table.rawValue)/today"
     }
 }

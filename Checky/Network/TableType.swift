@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Table: String {
+enum TableType: String {
     case a = "a"
     case b = "b"
     case c = "c"

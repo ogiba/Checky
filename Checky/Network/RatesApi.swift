@@ -13,7 +13,7 @@ import AlamofireObjectMapper
 class RatesApi {
     static let latestEndpoint = "http://api.nbp.pl/api/exchangerates/tables"
     
-    static func getLatest(for table: Table, completion: ((_ dailyRate: DailyRate?) -> ())?,
+    static func getLatest(for table: TableType, completion: ((_ dailyRate: DailyRate?) -> ())?,
                           errorCompletion: ((_ error: String) -> ())? = nil) {
         Alamofire.request(ApiHelper.latestEndpoint(for: table))
             .responseArray { (response: DataResponse<[DailyRate]>) in

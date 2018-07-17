@@ -19,7 +19,7 @@
 		7A45CF2520F6B952002A4FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF2320F6B952002A4FD5 /* LaunchScreen.storyboard */; };
 		7A45CF3020F6B953002A4FD5 /* CheckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF2F20F6B953002A4FD5 /* CheckyTests.swift */; };
 		7A45CF3B20F6B953002A4FD5 /* CheckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */; };
-		7ACCC84D20FE031000B8171F /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC84C20FE030F00B8171F /* Table.swift */; };
+		7ACCC84D20FE031000B8171F /* TableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC84C20FE030F00B8171F /* TableType.swift */; };
 		7ACCC84F20FE03FB00B8171F /* DailyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC84E20FE03FB00B8171F /* DailyRate.swift */; };
 		7ACCC85120FE058700B8171F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85020FE058700B8171F /* Currency.swift */; };
 		7ACCC85320FE0DAA00B8171F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */; };
@@ -68,7 +68,7 @@
 		7A45CF3620F6B953002A4FD5 /* CheckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A45CF3A20F6B953002A4FD5 /* CheckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckyUITests.swift; sourceTree = "<group>"; };
 		7A45CF3C20F6B953002A4FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7ACCC84C20FE030F00B8171F /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		7ACCC84C20FE030F00B8171F /* TableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableType.swift; sourceTree = "<group>"; };
 		7ACCC84E20FE03FB00B8171F /* DailyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRate.swift; sourceTree = "<group>"; };
 		7ACCC85020FE058700B8171F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				7A207A1920FD159E005C0945 /* RatesApi.swift */,
-				7ACCC84C20FE030F00B8171F /* Table.swift */,
+				7ACCC84C20FE030F00B8171F /* TableType.swift */,
 				7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */,
 			);
 			path = Network;
@@ -431,7 +431,7 @@
 				7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */,
 				7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */,
 				7ACCC85120FE058700B8171F /* Currency.swift in Sources */,
-				7ACCC84D20FE031000B8171F /* Table.swift in Sources */,
+				7ACCC84D20FE031000B8171F /* TableType.swift in Sources */,
 				7ACCC85620FE1A0B00B8171F /* String+Extension.swift in Sources */,
 				7A45CF2020F6B94F002A4FD5 /* Checky.xcdatamodeld in Sources */,
 			);
