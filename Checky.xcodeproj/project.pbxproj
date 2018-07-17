@@ -10,7 +10,7 @@
 		0879C72F59FD3FE22C85C2C4 /* libPods-CheckyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D07FD1828ED87013949D58 /* libPods-CheckyTests.a */; };
 		7A207A1620FCFF00005C0945 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A207A1420FCFF00005C0945 /* CurrencyTableViewCell.swift */; };
 		7A207A1720FCFF00005C0945 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A207A1520FCFF00005C0945 /* CurrencyTableViewCell.xib */; };
-		7A207A1A20FD159E005C0945 /* CurrencyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A207A1920FD159E005C0945 /* CurrencyApi.swift */; };
+		7A207A1A20FD159E005C0945 /* RatesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A207A1920FD159E005C0945 /* RatesApi.swift */; };
 		7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */; };
 		7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1920F6B94F002A4FD5 /* ViewController.swift */; };
 		7A45CF1D20F6B94F002A4FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF1B20F6B94F002A4FD5 /* Main.storyboard */; };
@@ -22,6 +22,7 @@
 		7ACCC84D20FE031000B8171F /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC84C20FE030F00B8171F /* Table.swift */; };
 		7ACCC84F20FE03FB00B8171F /* DailyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC84E20FE03FB00B8171F /* DailyRate.swift */; };
 		7ACCC85120FE058700B8171F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85020FE058700B8171F /* Currency.swift */; };
+		7ACCC85320FE0DAA00B8171F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */; };
 		E66B450DD245B25D1AF588FF /* libPods-CheckyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C6717808E29BEE09167E46 /* libPods-CheckyUITests.a */; };
 		F6D7BA27FD173BE49840A7D1 /* libPods-Checky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 475B4094D7F545C45F0C4BEF /* libPods-Checky.a */; };
 /* End PBXBuildFile section */
@@ -51,7 +52,7 @@
 		475B4094D7F545C45F0C4BEF /* libPods-Checky.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Checky.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A207A1420FCFF00005C0945 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		7A207A1520FCFF00005C0945 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
-		7A207A1920FD159E005C0945 /* CurrencyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyApi.swift; sourceTree = "<group>"; };
+		7A207A1920FD159E005C0945 /* RatesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesApi.swift; sourceTree = "<group>"; };
 		7A45CF1420F6B94F002A4FD5 /* Checky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A45CF1920F6B94F002A4FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		7ACCC84C20FE030F00B8171F /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		7ACCC84E20FE03FB00B8171F /* DailyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRate.swift; sourceTree = "<group>"; };
 		7ACCC85020FE058700B8171F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		A7168FF35F170237F1D0D1BB /* Pods-CheckyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyTests/Pods-CheckyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE66B95D4DF74DD3B8257627 /* Pods-Checky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checky/Pods-Checky.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F69A7F966131FB60BB37E5 /* Pods-CheckyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyUITests/Pods-CheckyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,8 +125,9 @@
 		7A207A1820FD1512005C0945 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				7A207A1920FD159E005C0945 /* CurrencyApi.swift */,
+				7A207A1920FD159E005C0945 /* RatesApi.swift */,
 				7ACCC84C20FE030F00B8171F /* Table.swift */,
+				7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -410,9 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A207A1A20FD159E005C0945 /* CurrencyApi.swift in Sources */,
+				7A207A1A20FD159E005C0945 /* RatesApi.swift in Sources */,
 				7A207A1620FCFF00005C0945 /* CurrencyTableViewCell.swift in Sources */,
 				7ACCC84F20FE03FB00B8171F /* DailyRate.swift in Sources */,
+				7ACCC85320FE0DAA00B8171F /* ApiHelper.swift in Sources */,
 				7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */,
 				7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */,
 				7ACCC85120FE058700B8171F /* Currency.swift in Sources */,

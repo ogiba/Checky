@@ -25,13 +25,15 @@ class ViewController: UIViewController {
         currencyTableView.rowHeight = UITableViewAutomaticDimension
         currencyTableView.estimatedRowHeight = UITableViewAutomaticDimension
         
-        CurrencyApi.getLatest(for: .a, completion: { dailyRate in
+        RatesApi.getLatest(for: .a, completion: { dailyRate in
             guard let _dailyRate = dailyRate else{
                 return
             }
             
             self.dailyRates.append(_dailyRate)
-            self.currencyTableView.reloadData()
+            DispatchQueue.main.async {
+                self.currencyTableView.reloadData()
+            }
         })
     }
 
