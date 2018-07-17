@@ -12,7 +12,7 @@ import ObjectMapper
 class Currencies: Mappable {
     var date: String?
     var ratesDict: Dictionary<String, Double>?
-    var rates: [Currency] = []
+    var rates: [OldCurrency] = []
     
     required init?(map: Map) {
         
@@ -24,13 +24,13 @@ class Currencies: Mappable {
         rates = convert(ratesDict: ratesDict)
     }
 
-    func convert(ratesDict: Dictionary<String, Double>?) -> [Currency] {
+    func convert(ratesDict: Dictionary<String, Double>?) -> [OldCurrency] {
         guard let _ratesDict = ratesDict else {
             return []
         }
         
-        return _ratesDict.map { (key, value) -> Currency in
-            return Currency(label: key, value: value)
+        return _ratesDict.map { (key, value) -> OldCurrency in
+            return OldCurrency(label: key, value: value)
         }.sorted(by: {$0.label < $1.label})
     }
 }

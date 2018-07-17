@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         currencyTableView.rowHeight = UITableViewAutomaticDimension
         currencyTableView.estimatedRowHeight = UITableViewAutomaticDimension
         
-        CurrencyApi.getLatest(completion: { currencies in
+        CurrencyApi.getLatest(for: .a, completion: { currencies in
             guard let _currencies = currencies else{
                 return
             }

@@ -2,18 +2,25 @@
 //  Currency.swift
 //  Checky
 //
-//  Created by Robert Ogiba on 16.07.2018.
+//  Created by Robert Ogiba on 17.07.2018.
 //  Copyright © 2018 Robert Ogiba. All rights reserved.
 //
 
 import Foundation
+import ObjectMapper
 
-class Currency {
-    let label: String
-    let value: Double
+class Currency: Mappable {
+    var currency:String?
+    var code: String?
+    var midValue: Double?
     
-    init(label: String, value: Double) {
-        self.label = label
-        self.value = value
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        self.currency <- map["currency"]
+        self.code <- map["code"]
+        self.midValue <- map["mid"]
     }
 }

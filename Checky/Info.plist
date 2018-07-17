@@ -32,8 +32,10 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>New item</key>
+			<key>Fixer</key>
 			<string>http://data.fixer.io</string>
+			<key>NBP</key>
+			<string>http://api.nbp.pl</string>
 		</dict>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
