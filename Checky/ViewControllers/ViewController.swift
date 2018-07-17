@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currencyTableView: UITableView!
     
     var sectionTitles: [String] = []
-    var currencies: [Currencies] = []
+    var dailyRates: [DailyRate] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +25,12 @@ class ViewController: UIViewController {
         currencyTableView.rowHeight = UITableViewAutomaticDimension
         currencyTableView.estimatedRowHeight = UITableViewAutomaticDimension
         
-        CurrencyApi.getLatest(for: .a, completion: { currencies in
-            guard let _currencies = currencies else{
+        CurrencyApi.getLatest(for: .a, completion: { dailyRate in
+            guard let _dailyRate = dailyRate else{
                 return
             }
             
-            self.currencies.append(_currencies)
+            self.dailyRates.append(_dailyRate)
             self.currencyTableView.reloadData()
         })
     }
@@ -43,15 +43,15 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return currencies.count
+        return dailyRates.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencies[section].rates.count;
+        return dailyRates[section].rates.count;
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return currencies[section].date
+        return dailyRates[section].effectiveDate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,10 +63,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         if let _currencyCell = cell as? CurrencyTableViewCell {
-            let currency = currencies[indexPath.section].rates[indexPath.row]
+            let currency = dailyRates[indexPath.section].rates[indexPath.row]
             
-            _currencyCell.labelView.text = currency.label
-            _currencyCell.valueView.text = "\(currency.value)"
+            _currencyCell.labelView.text = currency.code
+            _currencyCell.valueView.text = "\(currency.midValue)"
         }
     }
     

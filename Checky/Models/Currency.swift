@@ -12,7 +12,7 @@ import ObjectMapper
 class Currency: Mappable {
     var currency:String?
     var code: String?
-    var midValue: Double?
+    var midValue: Double = 0.0
     
     required init?(map: Map) {
         
