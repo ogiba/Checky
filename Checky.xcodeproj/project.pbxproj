@@ -23,6 +23,7 @@
 		7ACCC84F20FE03FB00B8171F /* DailyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC84E20FE03FB00B8171F /* DailyRate.swift */; };
 		7ACCC85120FE058700B8171F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85020FE058700B8171F /* Currency.swift */; };
 		7ACCC85320FE0DAA00B8171F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */; };
+		7ACCC85620FE1A0B00B8171F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC85520FE1A0B00B8171F /* String+Extension.swift */; };
 		E66B450DD245B25D1AF588FF /* libPods-CheckyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C6717808E29BEE09167E46 /* libPods-CheckyUITests.a */; };
 		F6D7BA27FD173BE49840A7D1 /* libPods-Checky.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 475B4094D7F545C45F0C4BEF /* libPods-Checky.a */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		7ACCC84E20FE03FB00B8171F /* DailyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRate.swift; sourceTree = "<group>"; };
 		7ACCC85020FE058700B8171F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		7ACCC85220FE0DAA00B8171F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		7ACCC85520FE1A0B00B8171F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A7168FF35F170237F1D0D1BB /* Pods-CheckyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyTests/Pods-CheckyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE66B95D4DF74DD3B8257627 /* Pods-Checky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checky.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checky/Pods-Checky.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F69A7F966131FB60BB37E5 /* Pods-CheckyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckyUITests/Pods-CheckyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		7A45CF1620F6B94F002A4FD5 /* Checky */ = {
 			isa = PBXGroup;
 			children = (
+				7ACCC85420FE19F200B8171F /* Extensions */,
 				7A207A1B20FD15EF005C0945 /* Models */,
 				7A207A1820FD1512005C0945 /* Network */,
 				7A207A1320FCF4BC005C0945 /* Cells */,
@@ -196,6 +199,14 @@
 				7A45CF3C20F6B953002A4FD5 /* Info.plist */,
 			);
 			path = CheckyUITests;
+			sourceTree = "<group>";
+		};
+		7ACCC85420FE19F200B8171F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7ACCC85520FE1A0B00B8171F /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A2CFC11A643F9B5440E58761 /* Frameworks */ = {
@@ -421,6 +432,7 @@
 				7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */,
 				7ACCC85120FE058700B8171F /* Currency.swift in Sources */,
 				7ACCC84D20FE031000B8171F /* Table.swift in Sources */,
+				7ACCC85620FE1A0B00B8171F /* String+Extension.swift in Sources */,
 				7A45CF2020F6B94F002A4FD5 /* Checky.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

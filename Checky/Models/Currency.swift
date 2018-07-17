@@ -12,6 +12,7 @@ import ObjectMapper
 class Currency: Mappable {
     var currency:String?
     var code: String?
+    var symbol: String?
     var midValue: Double = 0.0
     
     required init?(map: Map) {
@@ -22,5 +23,6 @@ class Currency: Mappable {
         self.currency <- map["currency"]
         self.code <- map["code"]
         self.midValue <- map["mid"]
+        self.symbol = code?.getCurrencySymbol()
     }
 }

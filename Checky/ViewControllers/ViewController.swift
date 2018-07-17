@@ -19,22 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currencyTableView.register(UINib.init(nibName: "CurrencyTableViewCell", bundle: nil), forCellReuseIdentifier: "test")
-        // Do any additional setup after loading the view, typically from a nib.
+        setupTableView()
         
-        currencyTableView.rowHeight = UITableViewAutomaticDimension
-        currencyTableView.estimatedRowHeight = UITableViewAutomaticDimension
-        
-        RatesApi.getLatest(for: .a, completion: { dailyRate in
-            guard let _dailyRate = dailyRate else{
-                return
-            }
-            
-            self.dailyRates.append(_dailyRate)
-            DispatchQueue.main.async {
-                self.currencyTableView.reloadData()
-            }
-        })
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +30,18 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: Setup methods
+extension ViewController {
+    func setupTableView() {
+        currencyTableView.register(UINib.init(nibName: "CurrencyTableViewCell", bundle: nil), forCellReuseIdentifier: "test")
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        currencyTableView.rowHeight = UITableViewAutomaticDimension
+        currencyTableView.estimatedRowHeight = UITableViewAutomaticDimension
+    }
+}
+
+//MARK: TableView DataSource & Delegate
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return dailyRates.count
@@ -67,7 +66,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         if let _currencyCell = cell as? CurrencyTableViewCell {
             let currency = dailyRates[indexPath.section].rates[indexPath.row]
             
-            _currencyCell.labelView.text = currency.code
+            if let _currencyCode = currency.code,
+                let _currencySymbol = currency.symbol {
+                _currencyCell.labelView.text = "\(_currencyCode) (\(_currencySymbol))"
+            }
             _currencyCell.valueView.text = "\(currency.midValue)"
         }
     }
@@ -75,6 +77,23 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Clicked item at \(indexPath.row)")
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+//MARK: Private methods
+extension ViewController {
+    fileprivate func loadData() {
+        RatesApi.getLatest(for: .a, completion: { dailyRate in
+            guard let _dailyRate = dailyRate else{
+                return
+            }
+            
+            self.dailyRates.append(_dailyRate)
+            
+            DispatchQueue.main.async {
+                self.currencyTableView.reloadData()
+            }
+        })
     }
 }
 
