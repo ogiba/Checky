@@ -11,15 +11,14 @@ import Alamofire
 import AlamofireObjectMapper
 
 class CurrencyApi {
-//    static let api = "http://data.fixer.io/api/latest?access_key=[accessKey]"
     static let latestEndpoint = "http://api.nbp.pl/api/exchangerates/tables"
     
     static func getLatest(for table: Table, completion: ((_ dailyRate: DailyRate?) -> ())?,
                           errorCompletion: ((_ error: String) -> ())? = nil) {
         Alamofire.request("\(CurrencyApi.latestEndpoint)/\(table.rawValue)")
             .responseArray { (response: DataResponse<[DailyRate]>) in
-            if let _data = response.value {
-                completion?(_data[0])
+            if let _data = response.value, _data.count > 0 {
+                completion?(_data.first)
             } else if let _error = response.error {
                 errorCompletion?(_error.localizedDescription)
             }
