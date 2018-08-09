@@ -77,6 +77,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Clicked item at \(indexPath.row)")
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let rateDetailsVC = mainStoryboard.instantiateViewController(withIdentifier: "RateDetailsViewController") as?
+            RateDetailsViewController
+        
+        if let _vc = rateDetailsVC {
+            self.navigationController?.pushViewController(_vc, animated: true)
+        }
     }
 }
 
