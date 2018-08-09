@@ -12,7 +12,7 @@
 		7A207A1720FCFF00005C0945 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A207A1520FCFF00005C0945 /* CurrencyTableViewCell.xib */; };
 		7A207A1A20FD159E005C0945 /* RatesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A207A1920FD159E005C0945 /* RatesApi.swift */; };
 		7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */; };
-		7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1920F6B94F002A4FD5 /* ViewController.swift */; };
+		7A45CF1A20F6B94F002A4FD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1920F6B94F002A4FD5 /* HomeViewController.swift */; };
 		7A45CF1D20F6B94F002A4FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF1B20F6B94F002A4FD5 /* Main.storyboard */; };
 		7A45CF2020F6B94F002A4FD5 /* Checky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A45CF1E20F6B94F002A4FD5 /* Checky.xcdatamodeld */; };
 		7A45CF2220F6B952002A4FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A45CF2120F6B952002A4FD5 /* Assets.xcassets */; };
@@ -56,7 +56,7 @@
 		7A207A1920FD159E005C0945 /* RatesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesApi.swift; sourceTree = "<group>"; };
 		7A45CF1420F6B94F002A4FD5 /* Checky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A45CF1720F6B94F002A4FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A45CF1920F6B94F002A4FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A45CF1920F6B94F002A4FD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7A45CF1C20F6B94F002A4FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A45CF1F20F6B94F002A4FD5 /* Checky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Checky.xcdatamodel; sourceTree = "<group>"; };
 		7A45CF2120F6B952002A4FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		7A207A1220FCF2ED005C0945 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A45CF1920F6B94F002A4FD5 /* ViewController.swift */,
+				7A45CF1920F6B94F002A4FD5 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 				7A207A1620FCFF00005C0945 /* CurrencyTableViewCell.swift in Sources */,
 				7ACCC84F20FE03FB00B8171F /* DailyRate.swift in Sources */,
 				7ACCC85320FE0DAA00B8171F /* ApiHelper.swift in Sources */,
-				7A45CF1A20F6B94F002A4FD5 /* ViewController.swift in Sources */,
+				7A45CF1A20F6B94F002A4FD5 /* HomeViewController.swift in Sources */,
 				7A45CF1820F6B94F002A4FD5 /* AppDelegate.swift in Sources */,
 				7ACCC85120FE058700B8171F /* Currency.swift in Sources */,
 				7ACCC84D20FE031000B8171F /* TableType.swift in Sources */,

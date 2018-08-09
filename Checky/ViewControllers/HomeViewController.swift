@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var currencyTableView: UITableView!
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 }
 
 //MARK: Setup methods
-extension ViewController {
+extension HomeViewController {
     func setupTableView() {
         currencyTableView.register(UINib.init(nibName: "CurrencyTableViewCell", bundle: nil), forCellReuseIdentifier: "test")
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,7 +42,7 @@ extension ViewController {
 }
 
 //MARK: TableView DataSource & Delegate
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return dailyRates.count
     }
@@ -81,7 +81,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 //MARK: Private methods
-extension ViewController {
+extension HomeViewController {
     fileprivate func loadData() {
         RatesApi.getLatest(for: .a, completion: { dailyRate in
             guard let _dailyRate = dailyRate else{
