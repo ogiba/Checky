@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var currencyTableView: UITableView!
     
     var loadedDates: [String] = []
@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         
         loadData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -104,8 +104,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                     let date = dateFormatter.date(from: _lastDate)
                     let newDate = date?.addingTimeInterval(-1*60*24*60)
                     
-                    print("\(newDate)")
-                    
                     loadData(for: newDate)
                 }
             }
@@ -156,6 +154,14 @@ extension HomeViewController {
             DispatchQueue.main.async {
                 self?.currencyTableView.reloadData()
             }
+            }, errorCompletion: { [weak self]error in
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                
+                let newValue = dateFormatter.string(from: _date)
+                
+                self?.fetchingMore = false
+                self?.loadedDates.append(newValue)
         })
     }
     
