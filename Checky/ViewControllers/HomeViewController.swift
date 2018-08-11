@@ -97,12 +97,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         
         if offsetY > contentHeight - scrollView.frame.height * 4 {
             if !fetchingMore {
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd"
-                
                 if let _lastDate = loadedDates.last {
-                    let date = dateFormatter.date(from: _lastDate)
-                    let newDate = date?.addingTimeInterval(-1*60*24*60)
+                    let loadedDate = _lastDate.toDate(withFormat: "yyyy-MM-dd")
+                    let newDate = loadedDate?.decrease(by: 1)
                     
                     loadData(for: newDate)
                 }

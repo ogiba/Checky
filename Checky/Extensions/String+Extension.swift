@@ -14,6 +14,14 @@ extension String {
         return locale.displayName(forKey: .currencySymbol, value: self)
     }
     
+    func toDate(withFormat format: String) -> Date?{
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = format
+        
+        return dateFormatter.date(from: self)
+    }
+    
     var currencyName: String? {
         get {
             let locale = NSLocale.current            
