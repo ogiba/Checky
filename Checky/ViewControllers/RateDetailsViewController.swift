@@ -18,7 +18,11 @@ class RateDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         if let _rate = dailyRate {
-            rateValueLabel.text = "\(_rate.midValue)"
+            self.title = _rate.code
+            
+            print("\(_rate.code!.currencyName)")
+            
+            rateValueLabel.text = "1 \("PLN".getCurrencySymbol() ?? "PLN") - \(_rate.midValue) \(_rate.symbol!)"
         }
         // Do any additional setup after loading the view.
     }

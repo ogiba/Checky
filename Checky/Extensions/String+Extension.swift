@@ -13,4 +13,11 @@ extension String {
         let locale = NSLocale(localeIdentifier: self)
         return locale.displayName(forKey: .currencySymbol, value: self)
     }
+    
+    var currencyName: String? {
+        get {
+            let locale = NSLocale(localeIdentifier: self)
+            return locale.localizedString(forCurrencyCode: self)
+        }
+    }
 }
