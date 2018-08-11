@@ -26,4 +26,19 @@ class RatesApi {
             }
         }
     }
+    
+    static func getHistoricalRates(for table: TableType, and date: Date,
+                                   completion: ((_ dailyRate: DailyRate?) -> ())?,
+                                   errorCompletion: ((_ error: String) -> ())? = nil) {
+        Alamofire.request(ApiHelper.dateEndpoint(for: table, in: date))
+            .responseArray { (response: DataResponse<[DailyRate]>) in
+                if let _data = response.value, _data.count > 0 {
+                    completion?(_data.first)
+                } else if let _error = response.error {
+                    errorCompletion?(_error.localizedDescription)
+                } else {
+                    completion?(nil)
+                }
+        }
+    }
 }
