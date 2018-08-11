@@ -16,6 +16,13 @@ class HomeViewController: UIViewController {
     var sectionTitles: [String] = []
     var dailyRates: [DailyRate] = []
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let _vc = segue.destination as? RateDetailsViewController,
+            let _selectedRate = sender as? Currency{
+            _vc.dailyRate = _selectedRate
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,13 +85,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         print("Clicked item at \(indexPath.row)")
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let rateDetailsVC = mainStoryboard.instantiateViewController(withIdentifier: "RateDetailsViewController") as?
-            RateDetailsViewController
-        
-        if let _vc = rateDetailsVC {
-            self.navigationController?.pushViewController(_vc, animated: true)
-        }
+        let selectedRate = dailyRates[indexPath.section].rates[indexPath.row]
+        performSegue(withIdentifier: "rateDetailsSegue", sender: selectedRate)
     }
 }
 

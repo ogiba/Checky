@@ -9,10 +9,17 @@
 import UIKit
 
 class RateDetailsViewController: UIViewController {
+    
+    @IBOutlet weak var rateValueLabel: UILabel!
+    
+    var dailyRate: Currency?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let _rate = dailyRate {
+            rateValueLabel.text = "\(_rate.midValue)"
+        }
         // Do any additional setup after loading the view.
     }
 

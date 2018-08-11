@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="3Rf-KG-Ave"/>
                     <connections>
                         <outlet property="currencyTableView" destination="2Ub-ZZ-k6P" id="dUI-8m-ri0"/>
-                        <segue destination="GlS-UL-Bkn" kind="show" id="m2D-zu-5NO"/>
+                        <segue destination="GlS-UL-Bkn" kind="show" identifier="rateDetailsSegue" id="m2D-zu-5NO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,6 +88,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d41-L7-ewQ"/>
                     </view>
+                    <connections>
+                        <outlet property="rateValueLabel" destination="wni-KJ-P6h" id="sKd-EQ-rkr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9Z-vl-pfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
