@@ -11,6 +11,7 @@ import UIKit
 class RateDetailsViewController: UIViewController {
     
     @IBOutlet weak var rateValueLabel: UILabel!
+    @IBOutlet weak var currencyNameLabel: UILabel!
     
     var dailyRate: Currency?
 
@@ -20,8 +21,7 @@ class RateDetailsViewController: UIViewController {
         if let _rate = dailyRate {
             self.title = _rate.code
             
-            print("\(_rate.code!.currencyName)")
-            
+            currencyNameLabel.text = _rate.code?.currencyName ?? ""
             rateValueLabel.text = "1 \("PLN".getCurrencySymbol() ?? "PLN") - \(_rate.midValue) \(_rate.symbol!)"
         }
         // Do any additional setup after loading the view.

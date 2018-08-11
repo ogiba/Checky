@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="-221" y="582"/>
         </scene>
-        <!--Rate Details View Controller-->
+        <!--CurrencyCode-->
         <scene sceneID="1l0-MV-lwL">
             <objects>
-                <viewController storyboardIdentifier="RateDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GlS-UL-Bkn" customClass="RateDetailsViewController" customModule="Checky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateDetailsViewController" title="CurrencyCode" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GlS-UL-Bkn" customClass="RateDetailsViewController" customModule="Checky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yy8-hN-ks5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,16 +79,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGM-9S-7En" userLabel="CurrencyName">
+                                <rect key="frame" x="0.0" y="280" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wni-KJ-P6h" firstAttribute="top" secondItem="zGM-9S-7En" secondAttribute="bottom" constant="8" id="FB0-9n-Zak"/>
                             <constraint firstItem="wni-KJ-P6h" firstAttribute="leading" secondItem="d41-L7-ewQ" secondAttribute="leading" id="Gbb-yV-SWJ"/>
+                            <constraint firstItem="d41-L7-ewQ" firstAttribute="trailing" secondItem="zGM-9S-7En" secondAttribute="trailing" id="Wi1-0h-wiT"/>
                             <constraint firstItem="d41-L7-ewQ" firstAttribute="trailing" secondItem="wni-KJ-P6h" secondAttribute="trailing" id="b1i-Ha-9zs"/>
                             <constraint firstItem="wni-KJ-P6h" firstAttribute="centerY" secondItem="yy8-hN-ks5" secondAttribute="centerY" id="rAf-11-qGU"/>
+                            <constraint firstItem="zGM-9S-7En" firstAttribute="leading" secondItem="d41-L7-ewQ" secondAttribute="leading" id="sQI-zd-JQN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d41-L7-ewQ"/>
                     </view>
                     <connections>
+                        <outlet property="currencyNameLabel" destination="zGM-9S-7En" id="nZE-wk-OGQ"/>
                         <outlet property="rateValueLabel" destination="wni-KJ-P6h" id="sKd-EQ-rkr"/>
                     </connections>
                 </viewController>

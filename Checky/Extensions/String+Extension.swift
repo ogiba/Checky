@@ -16,7 +16,7 @@ extension String {
     
     var currencyName: String? {
         get {
-            let locale = NSLocale(localeIdentifier: self)
+            let locale = NSLocale.current            
             return locale.localizedString(forCurrencyCode: self)
         }
     }
