@@ -9,6 +9,13 @@
 import Foundation
 
 extension Date {
+    func toString(withFormat format: String) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        
+        return dateFormatter.string(from: self)
+    }
+    
     func decrease(by value: Double) -> Date {
         let newDate = self.addingTimeInterval((-1 * value)*60*24*60)
         return newDate

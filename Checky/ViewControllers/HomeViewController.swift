@@ -36,6 +36,10 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    deinit {
+        print("HomeViewController destroyed")
+    }
 }
 
 //MARK: Setup methods
@@ -151,23 +155,15 @@ extension HomeViewController {
             DispatchQueue.main.async {
                 self?.currencyTableView.reloadData()
             }
-            }, errorCompletion: { [weak self]error in
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd"
-                
-                let newValue = dateFormatter.string(from: _date)
+            }, errorCompletion: { [weak self] error in
+                let newValue = _date.toString(withFormat: "yyyy-MM-dd")
                 
                 self?.fetchingMore = false
-                self?.loadedDates.append(newValue)
+                
+                if let _newDate = newValue {
+                    self?.loadedDates.append(_newDate)
+                }
         })
-    }
-    
-    fileprivate func isLoadingCell(for indexPath: IndexPath) -> Bool {
-        guard dailyRates.count > 0 else {
-            return false
-        }
-        
-        return indexPath.row >= currencyTableView.numberOfRows(inSection: indexPath.section)
     }
 }
 

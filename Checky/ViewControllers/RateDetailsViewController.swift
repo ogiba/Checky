@@ -13,7 +13,7 @@ class RateDetailsViewController: UIViewController {
     @IBOutlet weak var rateValueLabel: UILabel!
     @IBOutlet weak var currencyNameLabel: UILabel!
     
-    var dailyRate: Currency?
+    weak var dailyRate: Currency?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,9 @@ class RateDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        print("RateDetailsViewController deinited")
+    }
 
     /*
     // MARK: - Navigation
